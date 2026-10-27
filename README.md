@@ -8,7 +8,7 @@ goes to decisions. The trivia goes to the loop.
 
 ## Why it exists
 
-It was specified by a non-engineer who works with AI agents
+It was specified by a program manager who works with AI agents
 daily and kept hitting the same two failure modes: an agent that
 asked him about every little thing, and an agent that fixed
 nothing and let him find the breakage later. The loop is the
