@@ -78,5 +78,9 @@ loop's core (the authorization envelope, attempt discipline,
 and escalation shape) is not a restatement of the Ralph loop,
 Superpowers' verification-before-completion, or published
 loop-engineering workflows, which solve adjacent problems.
-Licensed under MIT (see `LICENSE`); change the license if you
-publish a fork.
+A companion skill by the same author, preflight, covers the
+ship-decision half of the same discipline; each stands on its
+own, and the escalation block in this file and the one in
+preflight are twin copies, kept identical on purpose. If you
+adopt both, keep them in sync. Licensed under MIT (see
+`LICENSE`); change the license if you publish a fork.

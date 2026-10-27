@@ -216,6 +216,12 @@ summary a human actually reads is five lines, drawn from the
 log: checks run, failures resolved, retries spent, not
 verified, nothing else moved.
 
+One more entry discipline: **who verified.** If anyone other
+than the agent (a second agent, a human, a separate review
+pass) checked the work, the log names them. A run the agent
+verified entirely itself declares that in Not verified below:
+self-review is a coverage fact, stated plainly, not hidden.
+
 The log closes with two entries, every time:
 
 - **Not verified.** Seeded mechanically before any judgment:
