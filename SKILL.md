@@ -105,6 +105,26 @@ After any step that produces a checkable result:
    breaks a neighbor is not a fix.
 6. **Repeat** until the checks pass or a stop condition fires.
 
+## Verifying corrections and derived values
+
+Two check shapes the loop treats as mandatory when they apply,
+because both fail silently under ordinary presence checks:
+
+- **A correction is verified by extinction, not presence.**
+  When a step corrects an error (a wrong string, figure, name,
+  or date), the check is a search for the OLD form across the
+  whole surface set, and it must return zero. Confirming the
+  new form is present proves the edit happened somewhere; it
+  does not prove the error is gone everywhere. A correction
+  reported from its edit list alone, without the extinction
+  search, is how a fixed error survives its own fix.
+- **Derived values are recomputed, never matched.** A value
+  computed from other values (a ratio from two amounts, a
+  percentage, a total) is verified by recomputing it from its
+  inputs. Checking that the inputs match their sources does
+  not check the derivation: two correct inputs can sit under
+  a wrong result.
+
 ## Attempt discipline
 
 - **State-check before any repeat.** Before repeating an action
